@@ -14,4 +14,20 @@ public class Juego {
     private double precio;
     private String codigojuego;
     private String[] genero;
+
+    public Juego() {
+        this.nombre = "";
+        this.digital = false;
+        this.precio = 0.0;
+        this.codigojuego = "";
+        this.genero = null;
+    }
+
+    public Juego(String nombre, boolean digital, double precio, String codigojuego, String[] genero) {
+        this.nombre = nombre;
+        this.digital = digital;
+        this.precio = precio;
+        this.codigojuego = codigojuego;
+        this.genero = genero;
+    }
 }
